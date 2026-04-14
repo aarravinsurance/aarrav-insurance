@@ -1,0 +1,127 @@
+export default function App() {
+  return (
+    <div style={{ fontFamily: "Arial, sans-serif", margin: 0 }}>
+
+      {/* HEADER */}
+      <header style={{
+        background: "#0a3d62",
+        color: "white",
+        padding: "15px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center"
+      }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img src="/logo.png" width="60" />
+          <h2 style={{ marginLeft: "10px" }}>Aarrav Insurance</h2>
+        </div>
+      </header>
+
+      {/* HERO */}
+      <section style={{ textAlign: "center", padding: "40px", background: "#f5f6fa" }}>
+        <h1>Secure Your Future Today</h1>
+        <p>Trusted Insurance Services in Biswan, Sitapur</p>
+
+        <a href="https://wa.me/91XXXXXXXXXX" style={cta}>
+          💬 Get Free Consultation
+        </a>
+      </section>
+
+      {/* SERVICES */}
+      <section style={{ padding: "30px", textAlign: "center" }}>
+        <h2>Our Services</h2>
+        <div style={grid}>
+          <div style={card}>Life Insurance</div>
+          <div style={card}>Health Insurance</div>
+          <div style={card}>Vehicle Insurance</div>
+        </div>
+      </section>
+
+      {/* STORY */}
+      <section style={{ padding: "30px", textAlign: "center" }}>
+        <h2>Our Story</h2>
+        <p style={text}>
+          Our journey started from a real-life experience when I faced difficulty
+          adding my newborn baby to my insurance policy. Despite multiple follow-ups,
+          the process was delayed.
+        </p>
+        <p style={text}>
+          When I directly contacted the insurance company, the work was completed
+          quickly. This made me realize the gap in proper support.
+        </p>
+        <p style={text}>
+          That’s why Aarrav Insurance Services was started — to provide honest
+          guidance and real support to customers.
+        </p>
+      </section>
+
+      {/* CONTACT */}
+      <section style={{ textAlign: "center", padding: "30px" }}>
+        <h2>Contact Us</h2>
+        <p>📞 +91XXXXXXXXXX</p>
+        <p>📍 Biswan, Sitapur</p>
+      </section>
+
+      {/* SOCIAL */}
+      <section style={{ textAlign: "center" }}>
+        <a href="https://facebook.com/yourpage" style={social}>Facebook</a>
+        <a href="https://instagram.com/yourpage" style={social}>Instagram</a>
+        <a href="https://twitter.com/yourpage" style={social}>Twitter</a>
+        <a href="https://youtube.com/yourchannel" style={social}>YouTube</a>
+      </section>
+
+      {/* MAP */}
+      <iframe
+        src="https://maps.google.com/maps?q=Biswan%20Sitapur%20Uttar%20Pradesh&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="300"
+        style={{ border: 0 }}
+      ></iframe>
+
+      {/* WHATSAPP FLOAT */}
+      <a href="https://wa.me/91XXXXXXXXXX" style={floatBtn}>💬</a>
+
+    </div>
+  );
+}
+
+const grid = {
+  display: "flex",
+  justifyContent: "center",
+  gap: "15px"
+};
+
+const card = {
+  padding: "20px",
+  background: "white",
+  boxShadow: "0 0 10px rgba(0,0,0,0.1)"
+};
+
+const text = {
+  maxWidth: "700px",
+  margin: "auto",
+  lineHeight: "1.6"
+};
+
+const social = {
+  margin: "10px",
+  textDecoration: "none"
+};
+
+const cta = {
+  background: "green",
+  color: "white",
+  padding: "10px 20px",
+  borderRadius: "5px",
+  textDecoration: "none"
+};
+
+const floatBtn = {
+  position: "fixed",
+  bottom: "20px",
+  right: "20px",
+  background: "green",
+  color: "white",
+  padding: "12px",
+  borderRadius: "50%"
+};
